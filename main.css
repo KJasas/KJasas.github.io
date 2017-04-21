@@ -25,10 +25,6 @@ div {
   width: 100%;
 }
 
-video {
-  background-color: #000000;
-  border: 2px solid black;
-}
 
 .container {
   display: flex;
@@ -54,19 +50,6 @@ video {
 	text-decoration: none
 }
 
-* {
-  box-sizing: border box;
-}
-
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-@black: #1d1d1d;
-.btn,
 button {
   background: @black;
   color: white;
@@ -97,44 +80,6 @@ button {
     border-color: lighten(@black, 5%);
     color: #fff;
   }
-}
-
-.btn-border {
-  background-color: transparent;
-  color: @black;
-}
-
-.btn-arrow {
-  position: relative;
-    transition: background-color 300ms ease-out;
-  span {
-    display: inline-block;
-    position: relative;
-    transition: all 300ms ease-out;
-    will-change: transform;
   }
-  &:hover span {
-    transform: translate3d(-1rem, 0, 0);
-  }
-  svg {
-    position: relative;
-    width: 1.1em;
-    right: 0px;
-    right: 0rem;
-    opacity: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: all 300ms ease-out;
-    will-change: right, opacity;
-    * {
-      stroke-width: 5;
-      stroke-color: transparent;
-    }
-  }
-  &:hover svg {
-    opacity: 1;
-    right: -2rem;
-  }
-}
 
 
