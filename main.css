@@ -60,7 +60,7 @@ div {
 }
 
 .center {
-    position: relative;
+    position: center;
     left: 0;
     top: 50%;
     width: 100%;
