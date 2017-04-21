@@ -36,7 +36,8 @@ div {
 }
 
 .nav {
-  background-color: #FFEE00;
+  background-color: #B43104;
+  color: #E0F8E0;
   max-width: 25%;
   min-width: 140px;
   flex: 1;
@@ -50,5 +51,10 @@ div {
 	text-decoration: none
 }
 
-
+.naver {
+	background-color: #DF3A01;
+	height: 80px;
+    width:140px;
+    display: inline-block;
+}
 
