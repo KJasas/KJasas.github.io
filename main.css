@@ -123,7 +123,7 @@ button {
     transform: translate3d(-1rem, 0, 0);
   }
   svg {
-    position: absolute;
+    position: relative;
     width: 1.1em;
     right: 0px;
     right: 0rem;
