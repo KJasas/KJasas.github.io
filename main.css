@@ -53,8 +53,10 @@ div {
 
 .naver {
 	background-color: #DF3A01;
-	height: 80px;
+	height: 30px;
     width:140px;
     display: inline-block;
+	border: 2px solid black;
+	position: center;
 }
 
