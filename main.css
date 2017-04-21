@@ -57,11 +57,10 @@ div {
     width:140px;
     display: inline-block;
 	border: 2px solid black;
-	position: center;
 }
 
 .center {
-    position: absolute;
+    position: relative;
     left: 0;
     top: 50%;
     width: 100%;
