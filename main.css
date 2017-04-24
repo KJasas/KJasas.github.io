@@ -40,7 +40,7 @@ div {
   color: #E0F8E0;
   max-width: 25%;
   min-width: 140px;
-  flex: 1;
+  flex: 10;
 }
 
 .nav h1 {
@@ -52,15 +52,14 @@ div {
 }
 
 .naver {
+	position: center;
 	background-color: #DF3A01;
 	height: 21px;
-    width:136px;
+    width:120px;
     display: inline-block;
-	border: 2px solid black;
-	left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
+	border-radius: 2px;
+    top: 70%;
+    text-align: center-left;
     font-size: 18px;
 }
 

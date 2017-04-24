@@ -1,15 +1,15 @@
 $(document).ready(function() {
-   $('div').mouseenter(function() {
+   $('.naver').mouseenter(function() {
        $(this).animate({
-           width: '+=15px'
+           width: '+=20px'
+       });
+	   $(this).animate({
+           color: 'black'
        });
    });
-   $('div').mouseleave(function() {
+   $('.naver').mouseleave(function() {
        $(this).animate({
-           width: '-=15px'
+           width: '-=20px'
        }); 
    });
-   $('div').click(function() {
-       $(this).toggle(1000);
-   }); 
 });
