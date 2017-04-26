@@ -18,31 +18,38 @@
 		<div class='menu-item'><a href="projects.html">Interesting projects</a></div>
 		<div class='menu-item'>Contacts</div>
 	</div>
+
 	<section>
-		<h1>Projects<h1>
-		<div class="text">
-			<h1>Data scraping</h1>
-<div class="tabs">
-  <div class="tab-2">
-    <label for="tab2-1">Background</label>
-    <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
-    <div>
-      <h4>Briefing</h4>
-	  <p>Let's say we have a lot (e.g. thousands) of different url sources, which need to to be clasified (e.g. government, news outlets, etc.). Normally, a person should visit every site, gather basic information about the source and put the source in a category.</p>
-      <p>The code I've written takes every url, cuts it to the base site, visits it and saves the information which is between its html code Title *** /Title parts. </p>
-	  <p>For example, source http://www.platts.com/news-feature/2015/metals/non-ferrous-metals-outlook/alumina-asia would become http://www.platts.com/ and would return “Latest Oil, Energy & Metals News, Market Data and Analysis | Platts”. </p>
+		<h1>Scraping</h1>
+<div class="tab-wrap">
+    <input type="radio" name="tabs" id="tab1" checked>
+    <div class="tab-label-content" id="tab1-content">
+      <label for="tab1">Briefing</label>
+      <div class="tab-content">Let's say we have a lot (e.g. thousands) of different url sources, which need to to be clasified (e.g. government, news outlets, etc.). Normally, a person should visit every site, gather basic information about the source and put the source in a category.
+      The code I've written takes every url, cuts it to the base site, visits it and saves the information which is between its html code Title *** /Title parts. </div>
     </div>
-  </div>
-  <div class="tab-2">
-    <label for="tab2-2">Two</label>
-    <input id="tab2-2" name="tabs-two" type="radio">
-    <div>
-      <h4>Tab Two</h4>
-      <p>Quisque sit amet turpis leo. Maecenas sed dolor mi. Pellentesque varius elit in neque ornare commodo ac non tellus. Mauris id iaculis quam. Donec eu felis quam. Morbi tristique lorem eget iaculis consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean at tellus eget risus tempus ultrices. Nam condimentum nisi enim, scelerisque faucibus lectus sodales at.</p>
+
+    <input type="radio" name="tabs" id="tab2">
+    <div class="tab-label-content" id="tab2-content">
+      <label for="tab2">Example</label>
+      <div class="tab-content">For example, source http://www.platts.com/news-feature/2015/metals/non-ferrous-metals-outlook/alumina-asia would become http://www.platts.com/ and would return “Latest Oil, Energy & Metals News, Market Data and Analysis | Platts”. </div>
     </div>
-  </div>
+    
+    <input type="radio" name="tabs" id="tab3">
+    <div class="tab-label-content" id="tab3-content">
+      <label for="tab3">Problems</label>
+      <div class="tab-content">TAB 3 - Donec vulputate ante ac ligula vestibulum, id mollis diam commodo. Integer at consequat magna. Sed elit sem, dictum nec porttitor ac, ultrices id enim. Morbi semper eros a enim malesuada, eu finibus erat dictum. Ut vitae orci a odio sagittis malesuada. Cras volutpat vel lorem in tempor. Duis ultricies lectus sit amet tellus vehicula faucibus. Etiam sed leo ac erat tempor feugiat at quis ipsum. Mauris pellentesque nisl lorem, ac finibus sapien sagittis vel. Donec et lobortis est. Vestibulum dignissim ligula nec erat interdum, quis sollicitudin metus pretium. Vestibulum quis dui sapien. Proin commodo justo ac orci elementum molestie. Aliquam mattis orci vitae volutpat commodo.</div>
+    </div>
+  
+     <input type="radio" name="tabs" id="tab4">
+     <div class="tab-label-content" id="tab4-content">
+      <label for="tab4">Future</label>
+      <div class="tab-content">TAB 4 - Quisque egestas, purus in tempor vulputate, diam augue mollis quam, quis elementum ipsum ex a risus. Quisque sed augue porta, facilisis felis vitae, cursus mi. Nullam mollis magna eget tincidunt mollis. Sed suscipit placerat ultricies. Sed eget lorem et ipsum ultricies congue eu a enim. Nam quis ex nec lorem dignissim suscipit eu ut felis. Vivamus molestie felis id purus congue, vel ultrices sem molestie.</div>
+    </div>
+    
+    <div class="slide"></div>
+  
 </div>
-		</div>
 	</section>
 </body>
 </html>
