@@ -14,13 +14,13 @@
 	</div>
 	<div class='menu'>
 		<div class='menu-item' onclick="location.href='index.html';">Home</div>
-		<div class='menu-item'><a href="bio.html">About</a></div>
-		<div class='menu-item'><a href="projects.html">Interesting projects</a></div>
-		<div class='menu-item'>Contacts</div>
+		<div class='menu-item' onclick="location.href='bio.html';">About</div>
+		<div class='menu-item' onclick="location.href='projects.html';">Done projects</div>
+		<div class='menu-item' onclick="location.href='contacts.html';">Contacts</div>
 	</div>
-
-	<section>
-		<h1>Scraping</h1>
+	<h1 class="galva">Scraping <button class="spin thick butt_pos" onclick="location.href='projects.html';">Back to projects</button></h1>
+		
+	<section>	  
 <div class="tab-wrap">
     <input type="radio" name="tabs" id="tab1" checked>
     <div class="tab-label-content" id="tab1-content">
@@ -32,21 +32,31 @@
     <input type="radio" name="tabs" id="tab2">
     <div class="tab-label-content" id="tab2-content">
       <label for="tab2">Example</label>
-      <div class="tab-content">For example, source http://www.platts.com/news-feature/2015/metals/non-ferrous-metals-outlook/alumina-asia would become http://www.platts.com/ and would return “Latest Oil, Energy & Metals News, Market Data and Analysis | Platts”. </div>
+      <div class="tab-content">For example, source <p class="pvz">http://www.platts.com/news-feature/2015/metals/non-ferrous-metals-outlook/alumina-asia</p> would become <p class="pvz">http://www.platts.com/</p> and would return <p class="pvz">"Latest Oil, Energy & Metals News, Market Data and Analysis | Platts".<p> </div>
     </div>
     
     <input type="radio" name="tabs" id="tab3">
     <div class="tab-label-content" id="tab3-content">
-      <label for="tab3">Problems</label>
-      <div class="tab-content">TAB 3 - Donec vulputate ante ac ligula vestibulum, id mollis diam commodo. Integer at consequat magna. Sed elit sem, dictum nec porttitor ac, ultrices id enim. Morbi semper eros a enim malesuada, eu finibus erat dictum. Ut vitae orci a odio sagittis malesuada. Cras volutpat vel lorem in tempor. Duis ultricies lectus sit amet tellus vehicula faucibus. Etiam sed leo ac erat tempor feugiat at quis ipsum. Mauris pellentesque nisl lorem, ac finibus sapien sagittis vel. Donec et lobortis est. Vestibulum dignissim ligula nec erat interdum, quis sollicitudin metus pretium. Vestibulum quis dui sapien. Proin commodo justo ac orci elementum molestie. Aliquam mattis orci vitae volutpat commodo.</div>
-    </div>
+		<label for="tab3">Problems</label>
+		<div class="tab-content">
+			<ul>
+				<li>Not that much information can be extracted from a title</li>
+				<li>Sometimes there's lot of unnecessary symbols in the title, eg. title: <p class="pvz">"charset="utf-8"/>Yahoo Finance - Business Finance, Stock Market, Quotes, News meta")</p></li>
+				<li>Sometimes the title itself is unreadable, eg. title: <p class="pvz">"TPEę¤å‡ŗę–™_TPEé»ē‡ę–™_äø“äøē¬å‘ę€§å¼¹ę€§ä½“-ę·±å³åø‚ē››å‰ä¼¦ę©å‘å·äøę‰é™å…¬å¸ø")</p> especially in exotic countries like China.</li>
+			</ul>
+		</div>
+	</div>
   
      <input type="radio" name="tabs" id="tab4">
      <div class="tab-label-content" id="tab4-content">
-      <label for="tab4">Future</label>
-      <div class="tab-content">TAB 4 - Quisque egestas, purus in tempor vulputate, diam augue mollis quam, quis elementum ipsum ex a risus. Quisque sed augue porta, facilisis felis vitae, cursus mi. Nullam mollis magna eget tincidunt mollis. Sed suscipit placerat ultricies. Sed eget lorem et ipsum ultricies congue eu a enim. Nam quis ex nec lorem dignissim suscipit eu ut felis. Vivamus molestie felis id purus congue, vel ultrices sem molestie.</div>
+		<label for="tab4">Future/Upgrades</label>
+		<div class="tab-content">	
+			<ul>
+				<li>Cleaning the title from unnecessary symbols</li>
+				<li>Questionably possible - using the extracted clean title and automatically searching google or Wikipedia for more detailed information.</li>
+			</ul>
+		</div>
     </div>
-    
     <div class="slide"></div>
   
 </div>
