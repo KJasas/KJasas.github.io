@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+		<link type="text/css" rel="stylesheet" href="main.css"/>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script src="script.js"></script>
+	</head>
+<body>
+	<div class='hamburger'>
+		<div class='line'></div>
+		<div class='line'></div>
+		<div class='line'></div>
+	</div>
+	<div class='menu'>
+		<div class='menu-item' onclick="location.href='index.html';">Home</div>
+		<div class='menu-item' onclick="location.href='bio.html';">About me</div>
+		<div class='menu-item' onclick="location.href='projects.html';">Done projects</div>
+		<div class='menu-item' onclick="location.href='contacts.html';">Contacts</div>
+	</div>
+	<h1 class="galva" background-image=url('img/football.jpg')>Football <button class="spin thick butt_pos" onclick="location.href='projects.html';">Back to projects</button></h1>
+		
+	<section>	  
+<div class="tab-wrap">
+    <input type="radio" name="tabs" id="tab1" checked>
+    <div class="tab-label-content" id="tab1-content">
+      <label for="tab1">Briefing</label>
+      <div class="tab-content">Our goal is to collect some specific information from sports statistics site. The written program visits unique pages of the site and collects specific part of it's html code.</div>
+    </div>
+
+    <input type="radio" name="tabs" id="tab2">
+    <div class="tab-label-content" id="tab2-content">
+      <label for="tab2">Example</label>
+      <div class="tab-content">Let's say that we want to collect information about the attendance of the 2015/2016 Premier Leagues (football/soccer) matches.
+	  Every match has an url, example <p class="pvz"> https://www.[SportsSite].com/Match/829783 </p> The number "829783" is matches unique ID. We look at the first and the last season matches' ID's, which are 829517 and  829799 accordingly.
+	  We know that these matches go sequentially, so almost (some information about matches may be changed long after, so the match can get non-sequential ID) all matches should be between these numbers. 
+	  To be careful, we widen the range, let's say 829500 to 829850. The written R code tries every url in this range. If an url exists, the code checks in its html code if the season and league is right. 
+	  If so, it searches the html and saves the playing teams names, date of match and number of attendance.
+	  </div>
+    </div>
+    <input type="radio" name="tabs" id="tab3">
+    <div class="tab-label-content" id="tab3-content">
+		<label for="tab3">Problems</label>
+		<div class="tab-content">
+			<ul>
+				<li>Some matches have ID's which are way beyond the range, so some missing data must be collected by hand.</li>
+				<li>The site [SportsSite].com has safeguard against automatic data scraping - from time to time it requires manually going to the site to prove that "you're a human".
+				Sometimes brute force works (trying 10 times every url, checking if the url is read as empty, which happens when safeguard appears), sometimes not (every other url in the range is read as empty).
+				So human interference is needed - stopping the code, checking in as a human, resuming the code.</li>
+			</ul>
+		</div>
+	</div>
+  
+     <input type="radio" name="tabs" id="tab4">
+     <div class="tab-label-content" id="tab4-content">
+		<label for="tab4">Future/Upgrades</label>
+		<div class="tab-content">	
+			<ul>
+				<li>Reading all seasons of all leagues at once.</li>
+				<li>Collecting more information from each url.</li>
+				<li>Somehow finding a better way around the safeguard.</li>
+			</ul>
+		</div>
+    </div>
+    <div class="slide"></div>
+  
+</div>
+	</section>
+</body>
+</html>

@@ -1,6 +1,6 @@
 body {
-  background: #967a6a;
-  color: #b7402c;
+  background: Black;
+  color: BlanchedAlmond ;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -14,14 +14,15 @@ h1, h5 {
 	font-weight: 100;
 }
 .galva {
-	color: #E4E4E6;
+	color: BlanchedAlmond;
 	margin-left: 320px;
 }
 
 .pvz {
-	color:#ff5151;
+	color: Tomato;
 	font-family: 'Lucida Console';
 	font-size: 1 rem;
+	width: 90vw;
 }
 
 a {
@@ -31,12 +32,12 @@ a {
 
 
 section {
-  background: #E4E4E6;
-  padding: 15em 3rem;
+  background: Maroon;
+  padding: 3rem;
   padding-top: 6rem;
-  margin: 0;
-  position: static;
-  top: 100%;
+  position: relative;
+  height: 100vh;
+  width: 90vw;
 }
 
 .hamburger {
@@ -56,13 +57,13 @@ section {
 .menu {
   width: 320px;
   height: 100%;
-  background: #991a1a;
+  background: Maroon;
   position: absolute;
   top: 0;
   left: -320px;
   transition: left .5s;
   z-index:1000;
-   color="#E4E4E6";
+   color=BlanchedAlmond;
 }
 
 .menu-item:first-child {
@@ -74,17 +75,17 @@ section {
 }
 
 .menu-item {
-  color: #fff;
+  color: BlanchedAlmond;
   width: 100%;
   padding: 1rem 3rem;
   box-sizing: border-box;
-  color="#E4E4E6";
+  color=BlanchedAlmond;
 }
 
 .menu-item:hover {
-	background: #E4E4E6;
+	background: BlanchedAlmond;
 	cursor: pointer;
-	color:#b7402c;
+	color:Maroon;
 }
 
 .wrap
@@ -135,7 +136,7 @@ section {
   font-weight:100;
   margin:0;
   text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-	color:#E4E4E6;
+	color:BlanchedAlmond;
 }
 .tile h2
 {
@@ -153,7 +154,7 @@ section {
 /*   opacity:0; */
   transform: translateX(-200px);
   transition-delay: 0.2s;
-	color:#E4E4E6;
+	color:BlanchedAlmond;
 }
 .animate-text
 {
@@ -162,7 +163,7 @@ section {
 }
 .tile:hover
 {
-  background-color:#991a1a; 
+  background-color:Maroon; 
 box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   transform:scale(1.05);
 }
@@ -245,7 +246,7 @@ input[type="radio"][name="tabs"] {
 }
 
 input[type="radio"][name="tabs"]:checked + .tab-label-content label {
-    color: #f97272;
+    color: Tomato;
 }
 
 input[type="radio"][name="tabs"]:checked + .tab-label-content .tab-content {
@@ -274,8 +275,8 @@ input[type="radio"][name="tabs"]:first-of-type:checked ~ .slide {
 
 label {
     cursor: pointer;
-    color: #E4E4E6;
-    background-color: #991a1a;
+    color: Maroon;
+    background-color: BlanchedAlmond;
     box-sizing: border-box;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -294,7 +295,7 @@ label {
 }
 
 .slide {
-    background: #f97272;
+    background: Tomato;
     width: calc(100% / 4);
     height: 4px;
     position: absolute;
@@ -305,7 +306,7 @@ label {
 }
 
 .tab-label-content {
-    width: 100%;
+    width: inherit;
 }
 
 .tab-label-content .tab-content {
@@ -338,7 +339,7 @@ label {
     white-space: nowrap;
     padding: 13px;
     box-sizing: border-box;
-    color: white;
+    color: BlanchedAlmond;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     font-family: Roboto, sans-serif;
@@ -371,8 +372,8 @@ button {
   background: none;
   border: 0;
   box-sizing: border-box;
-  box-shadow: inset 0 0 0 2px #991a1a;
-  color: #991a1a;
+  box-shadow: inset 0 0 0 2px BlanchedAlmond;
+  color: BlanchedAlmond;
   font-size: 1rem;
   font-weight: 200;
   margin: 1em;
@@ -400,7 +401,7 @@ button::after {
   padding: 0;
 }
 .spin:hover {
-  color: #991a1a;
+  color: Maroons;
 }
 .spin::before,
 .spin::after {
@@ -411,16 +412,16 @@ button::after {
   border: 2px solid transparent;
 }
 .spin:hover::before {
-  border-top-color: #991a1a;
-  border-right-color: #991a1a;
-  border-bottom-color: #991a1a;
+  border-top-color: Tomato;
+  border-right-color:  Tomato;
+  border-bottom-color:  Tomato;
   transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
 }
 .spin::after {
   border: 0 solid transparent;
 }
 .spin:hover::after {
-  border-top: 2px solid #0eb7da;
+  border-top: 2px solid Maroon;
   border-left-width: 2px;
   border-right-width: 2px;
   transform: rotate(270deg);
@@ -428,10 +429,10 @@ button::after {
 }
 
 .thick {
-  color: #E4E4E6;
+  color: BlanchedAlmond;
 }
 .thick:hover {
-  color: #E4E4E6;
+  color: BlanchedAlmond;
   font-weight: 200;
 }
 .thick::before {
@@ -443,14 +444,14 @@ button::after {
   z-index: -1;
 }
 .thick:hover::before {
-  background: #991a1a;
-  border-top-color: #991a1a;
-  border-right-color: #991a1a;
-  border-bottom-color: #991a1a;
+  background: Maroon;
+  border-top-color: Maroon;
+  border-right-color: Maroon;
+  border-bottom-color: Maroon;
   transition: background 0s linear 0.4s, border-top-color 0.15s linear, border-right-color 0.15s linear 0.15s, border-bottom-color 0.15s linear 0.25s;
 }
 .thick:hover::after {
-  border-top: 2.5em solid #991a1a;
+  border-top: 2.5em solid Maroon;
   border-left-width: 2.5em;
   border-right-width: 2.5em;
 }
