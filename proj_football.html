@@ -18,7 +18,7 @@
 		<div class='menu-item' onclick="location.href='projects.html';">Done projects</div>
 		<div class='menu-item' onclick="location.href='contacts.html';">Contacts</div>
 	</div>
-	<h1 class="galva" background-image=url('img/football.jpg')>Football <button class="spin thick butt_pos" onclick="location.href='projects.html';">Back to projects</button></h1>
+	<h1 class="galva">Football <button class="spin thick butt_pos" onclick="location.href='projects.html';">Back to projects</button></h1>
 		
 	<section>	  
 <div class="tab-wrap">
@@ -31,7 +31,7 @@
     <input type="radio" name="tabs" id="tab2">
     <div class="tab-label-content" id="tab2-content">
       <label for="tab2">Example</label>
-      <div class="tab-content">Let's say that we want to collect information about the attendance of the 2015/2016 Premier Leagues (football/soccer) matches.
+      <div class="tab-content">Let's say that we want to collect information about the attendance of the 2015/2016 [Football league] (soccer) matches.
 	  Every match has an url, example <p class="pvz"> https://www.[SportsSite].com/Match/829783 </p> The number "829783" is matches unique ID. We look at the first and the last season matches' ID's, which are 829517 and  829799 accordingly.
 	  We know that these matches go sequentially, so almost (some information about matches may be changed long after, so the match can get non-sequential ID) all matches should be between these numbers. 
 	  To be careful, we widen the range, let's say 829500 to 829850. The written R code tries every url in this range. If an url exists, the code checks in its html code if the season and league is right. 

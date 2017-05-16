@@ -8,6 +8,8 @@ body {
   font-family: 'Source Sans Pro','Calibri';
   font-weight: 100;
   font-size: 2rem;
+  min-height: 100vh;
+  margin: 0;
 }
 
 h1, h5 {
@@ -28,6 +30,7 @@ h1, h5 {
 a {
 	text-decoration: none;
 	cursor: pointer;
+	color:BlanchedAlmond;
 }
 
 
@@ -36,8 +39,9 @@ section {
   padding: 3rem;
   padding-top: 6rem;
   position: relative;
-  height: 100vh;
   width: 90vw;
+  clear: both;
+  display: block;
 }
 
 .hamburger {
@@ -455,3 +459,88 @@ button::after {
   border-left-width: 2.5em;
   border-right-width: 2.5em;
 }
+
+section .linija :before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    bottom: 0px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 4px;
+    background-color: #fff;
+}
+
+body .entries {
+	content: '';
+    width: calc(100% - 80px);
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    left: -5px;
+}
+
+body .entries .entry {
+    width: calc(50% - 80px);
+    float: left;
+    padding: 20px;
+    clear: both;
+    text-align: right;
+}
+
+body .entries .entry:not(:first-child) {
+    margin-top: -60px;
+}
+
+body .entries .entry .title {
+    font-size: 32px;
+    margin-bottom: 12px;
+    position: relative;
+    color: #fff;
+}
+
+body .entries .entry .title:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 4px solid #ffffff;
+    background-color: #1D1D1D;
+    border-radius: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: -73px;
+    z-index: 1000;
+}
+
+body .entries .entry .title.big:before {
+    width: 24px;
+    height: 24px;
+    -webkit-transform: translate(8px, -50%);
+    transform: translate(8px, -50%);
+}
+
+body .entries .entry .body {
+    color: #aaa;
+}
+
+body .entries .entry .body p {
+    line-height: 1.4em;
+}
+
+body .entries .entry:nth-child(2n) {
+    text-align: left;
+    float: right;
+}
+
+body .entries .entry:nth-child(2n) .title:before {
+    left: -63px;
+}
+
+body .entries .entry:nth-child(2n) .title.big:before {
+    -webkit-transform: translate(-8px, -50%);
+    transform: translate(-8px, -50%);
+}
+

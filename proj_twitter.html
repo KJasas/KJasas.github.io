@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+		<link type="text/css" rel="stylesheet" href="main.css"/>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script src="script.js"></script>
+	</head>
+<body>
+	<div class='hamburger'>
+		<div class='line'></div>
+		<div class='line'></div>
+		<div class='line'></div>
+	</div>
+	<div class='menu'>
+		<div class='menu-item' onclick="location.href='index.html';">Home</div>
+		<div class='menu-item' onclick="location.href='bio.html';">About me</div>
+		<div class='menu-item' onclick="location.href='projects.html';">Done projects</div>
+		<div class='menu-item' onclick="location.href='contacts.html';">Contacts</div>
+	</div>
+	<h1 class="galva">Twitter <button class="spin thick butt_pos" onclick="location.href='projects.html';">Back to projects</button></h1>
+		
+	<section>	  
+<div class="tab-wrap">
+    <input type="radio" name="tabs" id="tab1" checked>
+    <div class="tab-label-content" id="tab1-content">
+		<label for="tab1">Briefing</label>
+		<div class="tab-content">
+			The goal was to compare companies stock prices fluctuations versus the opinion about the company.
+		</div>
+    </div>
+	
+	<input type="radio" name="tabs" id="tab2">
+    <div class="tab-label-content" id="tab2-content">
+		<label for="tab2">Example</label>
+		<div class="tab-content">
+			Let's say we are interested in "Apple". First of all, using Twitter API we extract 1000-2000 tweets of the day containing words "Apple", "Iphone", "Ipad", etc. 
+			Then we eliminate all the repeated tweets (known as retweets) and are left with around 3-4 hundreds of tweets. We also save every tweets retweet count, and use it a measure of tweets "strength". 
+			Next we evaluate the message of the tweet - we look for positive or negative words (we have predefined database of adjectives).
+			Multiplying the score of a tweet by its strength we get final tweets opinion. Finally we sum up all the final scores and get the score of the day. 
+			Repeating the process for a month we can compare the fluctuation of opinions with fluctuation of companies stock prices.
+			The stock price data also was extracted automatically from <a href="finance.yahoo.com">Yahoo Finance</a>. 
+		</div>
+    </div>
+    
+    <input type="radio" name="tabs" id="tab3">
+    <div class="tab-label-content" id="tab3-content">
+		<label for="tab3">Problems</label>
+		<div class="tab-content">
+			<ul>
+				<li>The limitations on quantity and "age" of the tweets that can be extracted.</li>
+				<li>Weak database of the positive and negative adjectives.</li>
+				<li>Language barrier - only English tweets can be used.</li>
+				<li>Not sure if the Twitter API can be used by businesses for free. Should consider the legal aspects.</li>
+			</ul>
+		</div>
+	</div>
+  
+     <input type="radio" name="tabs" id="tab4">
+     <div class="tab-label-content" id="tab4-content">
+		<label for="tab4">Future/Upgrades</label>
+		<div class="tab-content">	
+			<ul>
+				<li>Creation of self-learning adjective database (have some ideas, would be awesome).</li>
+				<li>Taking into consideration the chain of retweets strength.</li>
+				<li>Somehow expanding the limits of data extraction.</li>
+			</ul>
+		</div>
+    </div>
+    <div class="slide"></div>
+  
+</div>
+	</section>
+</body>
+</html>
